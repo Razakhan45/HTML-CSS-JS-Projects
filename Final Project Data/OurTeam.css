@@ -1,0 +1,51 @@
+body{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    margin:30px;
+}
+.nav{
+    width: 35%;
+    float: left;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+.main{
+    width: 65%;
+    float: right;
+}
+/* @media screen and (max-width:600px){
+    body{
+        color: royalblue;
+    }
+} */
+@media all and (min-width:800px){
+    .nav li a:After{
+        content: " (" attr(data-email) " )";  
+        color: rgba(93, 95, 93, 0.663);
+    }
+}
+@media all and (min-width:600px) and (max-width:799px){
+    .nav li a:before{
+        content: "Email: ";  
+        color: rgb(3, 4, 6);
+    }
+}
+@media all and (min-width:200px) and (max-width:599px),(min-width:1000px){
+    .nav li a{
+    color:royalblue;
+    font-weight: bolder;
+}
+}
+div.main div::first-letter{
+    color: royalblue;
+    font-size: 0.6in;
+    font-weight: bolder;
+    text-shadow: 6px 6px 0px rgb(6, 10, 10);
+}
+
+
+

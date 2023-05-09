@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+<form class="container">
+    <h1>Addmission Form</h1>
+    <hr>
+    <h2>User Information</h2>
+    <label>Name: <input type="text" placeholder="Raza Khan" required></label>
+    <fieldset>
+        <legend>Gender</legend>
+        Male <input type="radio" name="gender" required>
+        Female <input type="radio" name="gender" required>
+    </fieldset>
+    <label>Address: <br><textarea placeholder="Enter Your Address here" required></textarea></label>
+    <label>Email: <input type="email" placeholder="razak6039@gmail.com" required></label>
+    <label>Phone No: <input type="number" placeholder="+92 331 0417686" required></label>
+    <h2>Campuses</h2><br>
+    <table>
+        <thead>
+            <tr>
+                <td><img src="porter-raab-gnj9vj--FRY-unsplash.jpg"></td>
+                <td><img src="michael-marsh-U0dBV_QeiYk-unsplash.jpg"></td>
+                <td><img src="zhanhui-li-1iuxWsIZ6ko-unsplash.jpg"></td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <br>
+    <select required>
+        <option value="">--Select Campus--</option>
+        <option value="London">London</option>
+        <option value="New York">New York</option>
+        <option value="France">France</option>
+    </select>
+    <label>CNIC <input type="number" placeholder="34402-0383650-5" required></label>
+    <label>Date of Birth: <input type="date" required></label>
+    <h2>Choose Course</h2>
+    <select style="height: 50px;" required>
+        <option value="">--Select Course--</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="bachelors">Bachelors</option>
+        <option value="Post-Graduate">Post-Graduate</option>
+    </select>
+    <button type="submit">Send Form</button>
+</form>
+</body>
+</html>

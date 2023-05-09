@@ -1,0 +1,63 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    border: 2px solid lightgray;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    
+}
+.form{
+    padding: 10px 200px 10px 200px;
+    margin: 10px;
+    background-color: #f2f2f2;
+
+}
+.heading{
+    text-align: center;
+    background-color:rgb(132, 193, 134) ;
+    padding: 0px;
+}
+.padding{
+    padding:10px 0px 0px 30px;
+}
+input[type="text"],
+input[type="email"],
+textarea,
+select{
+    width: 100%;
+    border:1px solid rgba(128, 128, 128, 0.55);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+textarea{
+    height:120px;
+    overflow: auto;
+    
+}
+button{
+    margin-top: 30px;
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background-color:rgb(114, 183, 117) ;
+    border: none;
+    border-radius: 5px;
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin: 150px 0 0 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+button:hover{
+    background-color: rgb(40, 154, 40);
+}
+button:active{
+    background-color: lawngreen;
+}
