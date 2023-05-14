@@ -1,0 +1,36 @@
+.bar{
+    background-image: url(pic1.jpg);
+    background-repeat: repeat-x;
+    word-spacing:100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 0 5px 0;
+    margin:5px 0 5px 0 ;
+    border: 2px solid;
+    border-color: green;
+    color: gold;
+}
+.leftmanu{
+    direction:ltr;
+    background-image: url(pic1.jpg);
+    background-repeat:repeat-x;
+    border: 2px solid;
+    border-color: green;
+    color: gold;
+
+    margin:0% 90% 0% 0%;
+    text-align: center;
+
+    /* margin:0 20px 0 0 ;
+    padding:0% 90% 0% 0%; */
+}
+.bgimg{
+    background-image: url(pic4.jpg);
+    background-attachment: fixed;
+    margin: 0 0 200px 100px;
+
+}
+.red{
+    color: rgb(17, 221, 68);
+    font-weight: bold;
+    font-size: x-large;
+}

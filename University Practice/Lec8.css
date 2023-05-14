@@ -1,0 +1,26 @@
+.bgimage{
+    background-image: url(../../Pictures/Wallpaper/city_street_aerial_view_201163_1366x768.jpg);
+    background-repeat:inherit;
+    background-position: 0px;
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+    background-size: contain;
+}
+.txt{
+    /* direction: rtl; */
+    letter-spacing: 5px;
+    word-spacing: 15px;
+    text-align: center;
+}
+a:link{
+    color: green;
+}
+a:hover{
+color: RED;
+}
+a:visited{
+    color: aqua;
+}
+a:active{
+    color: yellow;
+}

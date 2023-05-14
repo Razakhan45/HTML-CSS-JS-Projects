@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            button{
+                padding:5px 10px 5px 10px;
+                margin: 10px;
+                background-color: rgb(78, 206, 78);
+                color: white;
+                font-weight: bold;
+                border: 2px solid rgb(10, 10, 10);
+                border-radius: 5px;
+            }
+        </style>
+        <script>
+            function add(){
+                var x=parseInt( document.getElementById('one').value);
+                var y=parseInt( document.getElementById('two').value);
+                var z = document.getElementById('ans');
+                z.innerHTML = parseInt(x)+parseInt(y);
+            }
+            function sub(){
+                var x=parseInt( document.getElementById('one').value);
+                var y=parseInt( document.getElementById('two').value);
+                var z = document.getElementById('ans');
+                z.innerHTML = parseInt(x)- parseInt(y);
+            }
+            function mul(){
+                var x=parseInt( document.getElementById('one').value);
+                var y=parseInt( document.getElementById('two').value);
+                var z = document.getElementById('ans');
+                z.innerHTML = parseInt(x) * parseInt(y);
+            }
+            function div(){
+                var x=parseInt( document.getElementById('one').value);
+                var y=parseInt( document.getElementById('two').value);
+                var z = document.getElementById('ans');
+                z.innerHTML = parseInt(x) / parseInt(y);
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <table>
+                <thead>
+                    <th>Number 1</th>
+                    <th>Number 2</th>
+                    <th>Answer</th>
+                </thead>
+                <tbody>
+                   <tr>
+                    <td><input id="one"></td>
+                    <td><input id="two"></td>
+                    <td ><input id="ans"></td>
+                   </tr>
+                </tbody>
+            </table>
+            <button type="button" onclick="add()">Addition</button>
+            <button type="button" onclick="sub()">Subtraction</button>
+            <button type="button" onclick="mul()">Multiplication</button>
+            <button type="button" onclick="div()">Divide</button>
+        </form>
+    </body>
+</html>

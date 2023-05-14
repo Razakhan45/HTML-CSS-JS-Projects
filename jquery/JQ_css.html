@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+    <title>CSS</title>
+    <style>
+        div{
+            border: 2px solid blueviolet;
+            text-align: justify;
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice For CSS , On/Off , Append/Prepend , Clone function</h1>
+    <div id="box">
+        <h1>Test Box</h1>
+        <p>Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt delectus dolores enim alias voluptatem laudantium! Deserunt optio sint, excepturi accusamus possimus iste ullam, eveniet deleniti fuga omnis hic. Praesentium, provident. sit amet consectetur adipisicing elit. Delectus recusandae pariatur aperiam? Aliquid, neque eius! Molestias voluptas aspernatur totam aliquam repellendus illo minima quisquam velit, magnam beatae sapiente, libero impedit.</p>
+    </div>
+    <div id="box1">
+        <p>This is second paragraph.</p>
+        <h1>Arther Shelby</h1>
+    </div>
+    <button id="btn1">Replace 1</button>
+    <button id="btn2">Replace 2</button>
+    <script>
+
+        $(document).ready(function(){
+
+
+         $('#box').css("color","red");
+         //for Multiple line css
+         $('#box').css({
+            'border':'3px solid yellow',
+            'background': 'lightgray'
+         });
+
+
+
+
+         $('#box').prepend("<h2>Raza Khan</h2>");
+         $('#box').append("<h3>Raza Khan</h3>");
+
+
+
+         $("#box").on({
+            'mouseleave':function(){
+                $(this).css({
+                    'color':'royalblue',
+                    'background':'lime'
+                });
+            },
+            'mouseenter':function(){
+                $(this).css({
+                    'color':'black',
+                    'background':'red'
+                });
+            },
+            'click':function(){
+                $(this).css({
+                    'color':'snow',
+                    'background':'pink'
+                });
+            },
+            'dblclick':function(){
+                $(this).css({
+                    'color':'white',
+                    'background':'black'
+                });
+            },
+         });
+
+         $('#box').off('dblclick mouseleave');
+
+
+         $('#box h1,p').clone().appendTo('#box1');
+
+
+         $('#btn1').click(function(){
+            $('#box1 h1:nth-child(3)').replaceWith('<em><h1>Thomas Shelby</h1></em>')
+         });
+         $('#btn2').click(function(){
+            $('<h1>By Order Of The PEAKY BLINDERS.</h1>').replaceAll('h1');
+         });
+        });
+    </script>

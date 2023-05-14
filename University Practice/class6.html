@@ -1,0 +1,65 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>First name</label>
+            <input type="text" id="firstname">
+            <br>
+            <br>
+            <label>Middle name</label>
+            <input type="text" id="middlename">
+            <br>
+            <br>
+            <label>Last name</label>
+            <input type="text" id="lastname">
+            <br>
+            <br>
+            <lable>Gender</lable>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+            <br>
+            <br>
+            <lable>Age Group</lable>
+            <input type="radio" name="agegroup">18-25
+            <input type="radio" name="agegroup">25-30
+            <input type="radio" name="agegroup">30-35
+            <input type="radio" name="agegroup">35-40
+            <br>
+            <br>
+            <lable>About Me</lable>
+            <textarea></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Cars</legend>
+            <div>
+                <label>Lists of Cars</label>
+                <select>
+                    <optgroup label="Suzuki">
+                        <option id="Mehran" value="Mehran">Mehran</option> 
+                        <!-- value=Mehran for server -->
+                        <option>Wagon</option>
+                        <option>Alto</option>
+                    </optgroup>
+                    <optgroup label="Audi">
+                        <option>A4</option>
+                        <option>A5</option>
+                        <option>A6</option>
+                    </optgroup>
+                    <optgroup label="Honda">
+                        <option>BRV</option>
+                        <option>CRZ</option>
+                        <option>XY</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contact me</legend>
+            <input type="number">
+            <button style="background-color: blue;" type="submit">Submit Form</button>
+        </fieldset>
+    </body>
+</html>

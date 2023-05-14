@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class_Activity</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <form class="container">
+        First Number: <br>
+        <input type="text" name="first_nunmer" id="first_number"><br><br>
+        Second Number: <br>
+        <input type="text" name="second_n" id="second_number"><br><br>
+        Answer: <br>
+        <input type="text" name="answer" id="answer"><br><br><br>
+
+        <div class="container">
+        <button type="button" class="btn btn-success" name="add" id="add">Add</button>
+        <button type="button" class="btn btn-success"  name="subtract" id="subtract">Subtract</button>
+        <button type="button" class="btn btn-success"  name="multiply" id="multiply">Multiply</button>
+        <button type="button" class="btn btn-success"  name="divide" id="divide">Divide</button>
+    </div>
+      </form>
+
+
+      <script>
+        $("#add").click(function() {
+          var firstNumber = $("#first_number").val();
+          var secondNumber = $("#second_number").val();
+          var result = parseInt(firstNumber) + parseInt(secondNumber);
+          $("#answer").val(result);
+        });
+
+
+        $("#subtract").click(function() {
+          var firstNumber = $("#first_number").val();
+          var secondNumber = $("#second_number").val();
+          var result = parseInt(firstNumber) - parseInt(secondNumber);
+          $("#answer").val(result);
+        });
+
+        $("#multiply").click(function() {
+          var firstNumber = $("#first_number").val();
+          var secondNumber = $("#second_number").val();
+          var result = parseInt(firstNumber) * parseInt(secondNumber);
+          $("#answer").val(result);
+        });
+
+        $("#divide").click(function() {
+          var firstNumber = $("#first_number").val();
+          var secondNumber = $("#second_number").val();
+          var result = parseInt(firstNumber) / parseInt(secondNumber);
+          $("#answer").val(result);
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Practice Lec#2</title>
+    <style>
+        button{
+            font-family:Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid yellow;
+            background-color: yellow;
+            color: darkblue;
+            box-shadow: 1px 1px 2px darkblue;
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demo JS</h1>
+    <!-- <form>
+    <button>Hello World!</button>
+    </form>
+    <script>
+        let btn=document.querySelector('button');
+        btn.addEventListener('click',showMsg);
+        function showMsg(){
+            alert("Hello World! Raza")
+        }
+    </script>
+    <form> -->
+        <!-- <button>Roll No. 1:Raza Khan </button>
+    </form>
+    <script>
+         let button=document.querySelector('button');
+        button.addEventListener('click',inputMsg);
+        function inputMsg(){
+           let name=prompt('Enter Name of Student');
+           button.textContent='Roll No. 1:' + name;
+        }
+    </script> -->
+    <button>Roll NO. 1 : Raza Khan : Age 22 </button>
+    <script>
+       let btn=document.querySelector('button');
+       btn.addEventListener('click',display)
+       function display(){
+        let name = prompt('Enter your NAME here.');
+       let age = prompt('Enter your AGE here.');
+       btn.textContent='Roll NO. 2 : '+ name +' : '+ age;
+       }
+    </script>
+</body>
+</html>

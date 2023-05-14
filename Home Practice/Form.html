@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM 1</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+<form class="container">
+    <h1>Payment Form</h1>
+    <hr>
+    <h2>User Information</h2>
+    <label>Name: <input type="text" placeholder="Raza Khan" required></label>
+    <fieldset>
+        <legend>Gender</legend>
+        Male <input type="radio" name="gender" required>
+        Female <input type="radio" name="gender" required>
+    </fieldset>
+    <label>Address: <br><textarea placeholder="Enter Your Address here" required></textarea></label>
+    <label>Email: <input type="email" placeholder="razak6039@gmail.com" required></label>
+    <label>Pincode: <input type="number" placeholder="123456" required></label>
+    <h2>Payment Information</h2>
+    <label>Card Type: </label>
+            <p>
+            <div><img src="../../../Pictures/Wallpaper/los_angeles_skyscrapers_buildings_112617_1366x768.jpg"></div>
+            <div><img src="../../../Pictures/Wallpaper/city_street_aerial_view_201163_1366x768.jpg"></div>
+            <div><img src="../../../Pictures/Wallpaper/city_street_aerial_view_201163_1366x768.jpg"></div>
+            <div><img src="../../../Pictures/Wallpaper/city_street_aerial_view_201163_1366x768.jpg"></div>
+            </p>
+    <!-- <div class="box"><img src="../../../Pictures/Wallpaper/los_angeles_california_evening_playground_basketball_markup_palms_48031_1366x768.jpg"></div>
+    <div class="box"><img src="../../../Pictures/Wallpaper/los_angeles_laguna_beach_buildings_skyscrapers_58395_1366x768.jpg"></div>
+    <div class="box"><img src="../../../Pictures/Wallpaper/pexels-roberto-nickson-2525903.jpg"></div>
+    <div class="box"><img src="../../../Pictures/Wallpaper/pexels-quintin-gellar-612949.jpg"></div> -->
+    <select required>
+        <option value="">--Select Card Type--</option>
+        <option value="Visa">Visa</option>
+        <option value="Credit">Credit</option>
+        <option value="Master-card">Master-card</option>
+        <option value="Rupay">Rupay</option>
+    </select>
+    <label>Card Number: <input type="number" placeholder="1111-2222-3333-4444" required></label>
+    <label>Expiration Date: <input type="date" required></label>
+    <label>CVV: <input type="number" placeholder="123" required></label>
+    <button type="submit">Pay Now</button>
+</form>
+</body>
+</html>

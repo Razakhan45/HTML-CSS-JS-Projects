@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPs</title>
+</head>
+<body>
+    <!-- For LOOP -->
+    <script>
+        for(let i=0; i<10; i++)
+        {
+            console.log("MY name Is KHan.")
+        }
+    </script>
+    <!-- While -->
+    <script>
+        let i=5;
+        while(i<10)
+        {
+            console.log('Hello world');
+            i++;
+        }
+    </script>
+    <!-- Do...while -->
+    <script>
+        let j=10;
+        do{
+            console.log('Go to hell');
+            j++;
+        }while(j<=15)
+    </script>
+    <!-- For..In -->
+    <script>
+        let me={
+            name:'Raza Khan',
+            age:22,
+            gender:'male',
+        };
+        for(let key in me){
+            console.log(key,me[key]);
+        }
+        // Array
+        let names=['ALI','RAZA','JUNAID','ABDULLAH','IRFAN']
+        for(let index in names){
+            console.log(index,names[index]);
+        }
+    </script>
+    <!-- For..OF-->
+    <script>
+        for(let name of names)
+        {
+            console.log(name)
+            // console.log(name[0])
+        }
+    </script>
+</body>
+</html>

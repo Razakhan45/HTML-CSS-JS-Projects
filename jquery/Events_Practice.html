@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+    <title>Events Practice</title>
+    <style>
+        div{
+            border: 3px solid slateblue;
+            text-align: justify;
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice For Mouse Events</h1>
+    <div id="box1">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus recusandae pariatur aperiam? Aliquid, neque eius! Molestias voluptas aspernatur totam aliquam repellendus illo minima quisquam velit, magnam beatae sapiente, libero impedit.</p>
+    </div>
+    <h1>Practice For Keyboard Events</h1>
+    <div>
+        <h3>TextArea</h3>
+        <textarea id="box2" cols="150" rows="10"></textarea>
+    </div>
+    <h1>Practice For Form Events</h1>
+    <div id="box3">
+        <form>
+        <label>Name :</label><input id="1" type="text"><br><br>
+        <label>Class :</label><input id="2" type="text"><br><br>
+        <label>Country</label>
+        <select id="3">
+            <option>Pakistan</option>
+            <option>China</option>
+            <option>Switzerland</option>
+            <option>Bangladesh</option>
+            <option>India</option>
+        </select><br><br>
+        <button type="submit">Submit</button><br>
+        <hr>
+        </form>
+    </div>
+    <h1>Practice For Window Events</h1>
+    <div id="box4" style="width: 1120px;height: 90px; overflow: auto;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia a exercitationem eos natus et sed, nam ipsum porro rerum vel dolores sit. Ea tenetur libero voluptate reiciendis commodi dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptatibus! Quis, distinctio rerum aut provident porro incidunt pariatur ipsam debitis vitae, veniam facere nisi ipsum culpa reiciendis, eveniet ea tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sed iusto voluptas fuga rem, esse, expedita quis dolores aliquam sint ipsa adipisci voluptate porro cupiditate, magnam dolore. Dolorem, asperiores quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur reiciendis ad quaerat, debitis dolore pariatur alias magnam ratione laborum repudiandae maiores minima perspiciatis libero ullam quas sequi maxime ducimus! Delectus recusandae pariatur aperiam? Aliquid, neque eius! Molestias voluptas aspernatur totam aliquam repellendus illo minima quisquam velit, magnam beatae sapiente, libero impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad excepturi numquam magni modi. Explicabo laudantium molestiae obcaecati nam et, quam consequatur aspernatur, suscipit nesciunt illum sint? Magni porro dolore dolores?
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $("#box1").click(function(){
+            $(this).css('background-color','pink');
+        });
+        $("#box1").dblclick(function(){
+            $(this).css('background-color','red');
+        });
+        $("#box1").contextmenu(function(){
+            $(this).css('background-color','royalblue');
+        });
+        $("#box1").mouseenter(function(){
+            $(this).css('background-color','yellow');
+        });
+        $("#box1").mouseleave(function(){
+            $(this).css('background-color','orange');
+        });
+    });
+    $(document).ready(function(){
+        $('#box2').keypress(function(){
+            $(this).css('background-color','royalblue');
+        });
+        $('#box2').keyup(function(){
+            $(this).css('background-color','lime');
+        });
+        $('#box2').keydown(function(){
+            $(this).css('background-color','gold');
+        });
+    });
+    $(document).ready(function(){
+        $('#1,#2,#3').focus(function(){
+            $(this).css('background-color','lime');
+            $(this).css('margin','20px');
+        });
+        $('#1,#2,#3').blur(function(){
+            $(this).css('background-color','pink');
+            $(this).css('margin','10px');
+        });
+        $('#3').change(function(){
+            $(this).css('background-color','yellow');
+            var a = $('#3').val();
+            $("hr").html(a); 
+        });
+        $('#box3').submit(function(){
+            $(this).css('background-color','red');
+            alert('form submitted');
+        });
+    });
+    $(document).ready(function(){
+        $('#box4').scroll(function(){
+            $(this).css('background-color','skyblue');
+        });
+        $(window).resize(function(){
+            $('#box4').css('background-color','lightpink');
+        });
+    });
+</script>

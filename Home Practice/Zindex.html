@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        div.layer1{
+            z-index: 2;
+            position:absolute;
+            top:8px;
+            left:8px;
+            width:250px;
+            height:120px;
+            background-color: rgba(255, 0, 0, 0.66);
+            border:2px solid black;
+            padding: 5px;
+            font-size: 30px;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div.layer2{
+            z-index:3 ;
+            position:absolute;
+            top:25px;
+            left:25px;
+            width:250px;
+            height:120px;
+            background-color: rgba(65, 105, 225, 0.622);
+            border:2px solid black;
+            padding: 5px;
+            font-size: 30px;
+            font-family: fantasy;
+        }
+        div.layer3{
+            z-index:1 ;
+            position:absolute;
+            top:40px;
+            left:40px;
+            width:250px;
+            height:120px;
+            background-color: rgba(63, 170, 17, 0.572);
+            border:2px solid rgb(0, 0, 0);
+            padding: 5px;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="layer1">Raza Khan</div>
+    <div class="layer2">Raza Khan</div>
+    <div class="layer3">Raza Khan</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+h1{
+    color: rgb(0, 255, 200);
+     border: 1px solid;
+     border-color: rgb(134, 95, 160);
+     background-color: gray;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.h12{
+    color: rgb(255, 0, 0);
+     border: 1px dotted;
+     border-color: rgb(134, 95, 160);
+     background-color: rgb(19, 121, 146);
+     font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.h13{
+    color: rgb(166, 255, 0);
+     border: 1px solid;
+     font-size: 50px;
+     border-color: rgb(160, 95, 95);
+     background-color: rgb(161, 24, 224);
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/* p span{
+    font-size: 25px;
+}
+b span{
+    font-size: 10px;
+}
+#myspan{
+    color: rgb(0, 255, 115);
+    border: 2px;
+    background-color: chocolate;
+} */
+  #blue{
+    color: blue;
+  }
+  #blue p{
+    color: crimson;
+  }
+  p #blue{
+    color: rgb(241, 48, 155);
+    font-size: 50px;
+  }
+  /* multiple selector */
+  h3,h4{
+    color:rgb(201, 76, 76);
+  }
+  /* .padding{
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  } */
+  .padding{
+    padding: 20px,15px,25px,30px;
+    margin: 50 50 50 50;
+  }
+  /* all sides same
+  .padding{
+    padding: 50px;
+  } */

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            function myfunction(){
+                document.getElementById("para").innerHTML="Hello World"
+                document.getElementById('para').style.backgroundColor='grey'
+            }
+            function changecolor(){
+                document.getElementById("para").style.color="royalblue"
+                document.getElementById("para").style.textAlign="center"
+                document.getElementById('para').style.fontSize='2s0px'
+                document.getElementById('para').style.fontFamily='verdana'
+                document.getElementById('para').style.fontWeight='bolder'
+            }
+            function border(){
+              var b= document.getElementById('par');
+              b.style.color='green';
+              b.style.fontStyle='italic';
+              b.style.margin='30px'
+              b.style.border='5px solid red'
+            }
+        </script>
+    </head>
+    <body>
+       <div>
+        <p id="para" value="MyPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore inventore officia rerum dolorem? Quia laboriosam, dolorem reiciendis eveniet qui assumenda laudantium eligendi? Voluptas repellendus nesciunt fugiat autem asperiores. Dolore, voluptates.</p>
+        <p id="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ut eum facilis, qui quis beatae aut et est temporibus veritatis ex eligendi. In reprehenderit, veniam quam similique soluta iusto distinctio?</p>
+        </div>
+       <br>
+       <br>
+       <!-- <button onclick="myfunction()">Click Me</button> -->
+       <button onclick="changecolor()">change color</button>
+       <button onclick="myfunction()">Hello</button>
+       <button onclick="border()">Border</button>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Letter Searching</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+#buttons{
+    border: 4px solid black;
+    height: 100%;
+    background-color: rgba(169, 175, 166, 0.575);
+
+}
+button{
+    margin: 3%;
+    padding: 10px;
+    width: 50%;
+}
+input{
+    margin: 3%;
+    padding: 10px;
+    width: 80%;
+}
+#textarea{
+    border: 4px solid gray;
+    height: 100%;
+    background-color: #f3f3f3;
+}
+textarea{
+    overflow-y:scroll ;
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+    border: 2px solid royalblue;
+}
+h1{
+    margin-top: 130px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+}
+</style>
+<script>
+    function myfunction(){
+        var x = prompt("Enter Poem ID :");
+       var y = prompt("Enter Tag :");
+    };
+</script>
+    </head>
+    <body>
+        <div class="containter">
+            <div class="row">
+                <div id="textarea" class="col-lg-8">
+                    <textarea></textarea>
+                </div>
+                <div id="buttons" class="text-center col-lg-4">
+                    <h1>POEMS</h1>
+                    <input placeholder="Enter Word" type="text"><br>
+                    <button type="button" class="btn btn-success">Search by Word</button><br><br>
+                    <input placeholder="Enter Tag" type="text"><br>
+                    <button type="button" class="btn btn-info">Search by Tag</button><br><br>
+                    <button type="button" onclick="myfunction()" class="btn btn-warning">Add Tags</button><br><br>
+                    <button type="button" class="btn btn-danger">Reload</button><br><br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

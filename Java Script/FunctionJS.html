@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            button{
+                font-family:Arial, Helvetica, sans-serif;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                text-align: center;
+                border: 2px solid yellow;
+                background-color: yellow;
+                color: darkblue;
+                box-shadow: 1px 1px 2px darkblue;
+                border-radius: 10px;
+                padding: 3px 10px;
+                cursor: pointer;
+                display: inline-block;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+     <form>
+        <button id="one">Enter 1st Student</button>
+        <button class="two">Enter 2nd Student</button>
+        <button class="three">Enter 3rd Student</button>
+        <br>
+        <button>Enroll All</button>
+        </form>
+        <script>
+            let x=document.getElementById('one');
+            var name, age, id;
+            x.addEventListener('click',display)
+            function display(event){
+                name = prompt("Enter Student Name :");
+                age = prompt("Enter Student Age :");
+                id = prompt("Enter Student ID :");
+                x.textContent='Roll No.1 : '+name+' : '+'Age : '+age+' ID : '+id;
+                event.preventDefault();
+            };
+        </script>
+    </body>
+</html>
